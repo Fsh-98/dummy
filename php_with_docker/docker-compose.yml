@@ -6,6 +6,8 @@ services:
       context: ./php_files
       dockerfile: Dockerfile
     container_name: php73
+    depends_on:
+      - db
     volumes:
       - ./php_files:/var/www/html/
     ports:
