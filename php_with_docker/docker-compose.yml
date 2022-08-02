@@ -1,7 +1,10 @@
 version: '3.3'
 services:
   web:
-    image: php:7.3-apache
+    # image: php:7.3-apache
+    build:
+      context: ./php_files
+      dockerfile: Dockerfile
     container_name: php73
     volumes:
       - ./php_files:/var/www/html/
