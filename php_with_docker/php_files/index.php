@@ -1,5 +1,16 @@
 <?php
-    echo "hello docker! <br/>";
+$dbhost = "db";
+$dbuser = "user";
+$dbpass = "demo";
+$dbname = "demo_db";
 
-    echo "The port number is 8006";
+$con = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+if ($con->connect_error) {
+    // commit to check
+    echo "Connection failed.".$con->connect_error; 
+}else{
+    echo "Connection sucessful.";
+}
+
 ?>
