@@ -9,6 +9,8 @@ $user_date = check_login($con);
 
 ?>
 
+<!-- html file for the index page added -->
+
 <!DOCTYPE html>
 <html>
 <head>
